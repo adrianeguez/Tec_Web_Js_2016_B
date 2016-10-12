@@ -68,13 +68,13 @@ Para usar tablas necesitamos definir las filas con pipe
 
 Para escribir varias lineas de citas solamente las concatenamos en la siguiente linea utilizando mayor que`>`:
 
-> Yo solo se, que nada se.
+> Yo solo se, que nada se. NO OLVIDARSE EL SALTO DE LINEA.
 
-> Un filosofo random.
+> Un filosofo random.NO OLVIDARSE EL SALTO DE LINEA.
 
-> Blockquotes are very handy in email to emulate reply text.
+> Blockquotes are very handy in email to emulate reply text.NO OLVIDARSE EL SALTO DE LINEA.
 
-> This line is part of the same quote.
+> This line is part of the same quote.NO OLVIDARSE EL SALTO DE LINEA.
 
 Sino utilizamos una cita en una linea con mayor que `>`:
 
