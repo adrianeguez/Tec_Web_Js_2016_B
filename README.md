@@ -28,7 +28,9 @@ Para utilizar un [Link](https://github.com/adrianeguez/Tec_Web_Js_2016_B) debemo
 
 Para nosotros utilizar imagenes debemos de colocar un texto alternativo en brackets[] despues del caracter de exclamasion ! y el link de la imagen entre parentesis () 
 ![Imagen de Js en color amarillo](http://nodeframework.com/assets/img/js.png "Javascript")
+## Formateo de Codigo
 
+Para nosotros utilizar el formateo de codigo dentro de texto plano debemos de utilizar el caracter `Tilde invertida`
 
 
 
