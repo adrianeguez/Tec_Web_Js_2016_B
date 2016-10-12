@@ -12,8 +12,8 @@ Este repositorio forma parte del  [curso de tecnologias web](https://github.com/
 
 1. El numero 
 2. De las listas
-..* Lista no ordenada 1
-..* Lista no ordenada 2 
+  * Lista no ordenada 1 (dos espacios " " antes del asterisco)
+  * Lista no ordenada 2 (dos espacios " " antes del asterisco)
 2. De las listas
 1. Ordenadas
 4. no Importa
