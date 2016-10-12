@@ -69,7 +69,11 @@ Para usar tablas necesitamos definir las filas con pipe
 Para escribir varias lineas de citas solamente las concatenamos en la siguiente linea utilizando mayor que`>`:
 
 > Yo solo se, que nada se.
-> Un filosofo random
+> Un filosofo random.
+
+
+> Blockquotes are very handy in email to emulate reply text.
+> This line is part of the same quote.
 
 Sino utilizamos una cita en una linea con mayor que `>`:
 
