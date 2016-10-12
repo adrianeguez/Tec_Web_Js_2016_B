@@ -53,6 +53,18 @@ var mensaje="Hola mundo";
 </html>
 ```
 
+## Tablas
+
+Para usar tablas necesitamos definir las filas con |
+
+|Columna 1|Columna 2| Columna 3| Columna 4|
+|-|-|-|-|
+|Valor 1 C1|Valor 1 C2|Valor 1 C3 |Valor 1 C4|
+|Valor 2 C1|Valor 2 C2|Valor 2 C3 |Valor 2 C4|
+|Valor 3 C1|Valor 3 C2|Valor 3 C3 |Valor 3 C4|
+|Valor 4 C1|Valor 4 C2|Valor 4 C3 |Valor 4 C4|
+
+
 
 
 
