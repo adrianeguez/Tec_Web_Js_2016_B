@@ -16,6 +16,8 @@ Este repositorio forma parte del  [curso de tecnologias web](https://github.com/
   * Lista no ordenada 2 (dos espacios " " antes del asterisco)
 2. De las listas
 1. Ordenadas
+  1. Esta si es una lista ordenada (con dos espacios " " antes de los numeros )
+  1. Esta es la segunda lista ordenada (con dos espacios " " antes de los numeros )
 4. no Importa
 
 
