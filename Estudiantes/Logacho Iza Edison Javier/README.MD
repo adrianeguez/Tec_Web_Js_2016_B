@@ -9,7 +9,10 @@ Me gusta compartir tiempo de calidad con la familia:
 * Hacer una comida
 * Dar un paseo
 
-### Distracciones
+## Distracciones
 * Me gusta mucho la musica
 * Dormir 
 * Ver peliculas de ciencia ficción
+
+## Imagen 
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
