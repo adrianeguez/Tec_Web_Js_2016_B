@@ -12,4 +12,4 @@ Alumna de Sexto de Semestre de Ingenieria de sistemas
 
 ## Repositorio de GitHub
 
-[Link Repositorio](https://github.com/majito11/TecnologiasWeb2016B)
+[Link Repositorio María José Caiza](https://github.com/majito11/TecnologiasWeb2016B)
