@@ -16,4 +16,3 @@ Me gusta compartir tiempo de calidad con la familia:
 
 ## Imagen 
 ![logo] (https://kanquigua.files.wordpress.com/2014/12/46-la-locomotora-8-embanderada-apunto-de-entrar-en-chimbacalle-el-25-de-junio-de-1908-805x275.jpg "Chimbacalle")
-![Imagen de Js en color amarillo](http://nodeframework.com/assets/img/js.png "Javascript")
