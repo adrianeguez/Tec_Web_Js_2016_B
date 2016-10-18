@@ -6,7 +6,7 @@
 
 #### Imagen
 
-![Imagen de Deidamia Quishpe](https://www.facebook.com/photo.php?fbid=681725895215870&set=a.116082538446878.30398.100001353986013&type=3&theater "Deidamia Quishpe")
+![Imagen de Deidamia Quishpe](https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/10367735_681725895215870_7271888274521163672_n.jpg?oh=e0d39d0a461aa20c70d66a6dee1f12f5&oe=5862B9FC&__gda__=1487177248_9b651016b697436873650aed9c7664ed "Deidamia Quishpe")
 
 ***
 
