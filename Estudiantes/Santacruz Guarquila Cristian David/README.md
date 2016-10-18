@@ -5,7 +5,7 @@
 ### Nombre: Cristian David Santacruz Guarquila
 
 #### Foto de Perfil
-![Cristian Santacruz](https://www.facebook.com/photo.php?fbid=752816898094885&set=pb.100000997454366.-2207520000.1476761629.&type=3&theater "Cristian Santacruz")
+![Cristian Santacruz](https://github.com/adrianeguez/Tec_Web_Js_2016_B/blob/master/Estudiantes/Santacruz%20Guarquila%20Cristian%20David/Imagen/10426078_752816898094885_3622948680551860677_n.jpg "Cristian Santacruz")
 
 #### Mi repositorio GitHub:
 [Repositorio de Cristian Santacruz](https://github.com/CristianSantacruz/TecnologiasWeb)
