@@ -9,4 +9,4 @@
 
 ### Enlace al repositorio Tany
 
-[Repositorio Tany](https://github.com/TaniaMaricela/Tecnolog-as-Web-Js) 
+[Repositorio Tany](https://github.com/TaniaMaricela/Tecnologias-Web-Js-Tany) 
