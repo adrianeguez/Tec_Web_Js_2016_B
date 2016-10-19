@@ -11,8 +11,8 @@ Castillo Muñoz Christian Eduardo
 ---
 
 #### Descripción:
-Estudiante de octavo de la Escuela Politécnica Nacional
-
+1.  Estudiante de octavo semestre de la Escuela Politécnica Nacional.
+2.  Me gusta leer y correr, "Cuando tengo tiempo"
 
 ---
 
