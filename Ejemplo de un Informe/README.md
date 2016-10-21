@@ -71,9 +71,27 @@ La Web se desarrolló entre marzo de 1989 y diciembre de 1990.2 3 por el inglés
 
 ### Imagenes desde Github **IMPORTANTE**
 
-Se pueden usar imágenes desde nuestros archivos en github,
+Se pueden usar imágenes desde nuestros archivos en github que constan de la siguiente URL:
+
+- Github
+  * La url de github que es `https://github.com` 
+- Usuario
+  * La url de usuario de github que en este caso es: `/adrianeguez` 
+- Repositorio
+  * El repositorio de Github que estamos usando, en este caso es `/Tec_Web_Js_2016_B`
+- Rama o  Branch
+  * La rama de nuestro repositorio en este formato: `/blob/master`
+- El PATH
+  * La direccíon de nuesto archivo por ejemplo `/carpeta/subcarpeta/subsubcarpeta/archivo.png` en este ejemplo es `/Ejemplo%20de%20un%20Informe/Imagenes/Flujograma.png` 
+- RAW
+  * Por ultimo mandamos un Query String Parameter de la con la variable `raw` y valor `true` de la siguiente manera: `?raw=true`
+  
+**Al final** nuestro url queda de la siguiente manera:
+
+#### `https://github.com/adrianeguez/Tec_Web_Js_2016_B/blob/master/Ejemplo%20de%20un%20Informe/Imagenes/Flujograma.png?raw=true`
+
 <p align="center">
-<img src="https://raw.githubusercontent.com/adrianeguez/Tec_Web_Js_2016_B/01-HTML/Graficos/HTTP%20METHODS.png">
+<img src="https://github.com/adrianeguez/Tec_Web_Js_2016_B/blob/master/Ejemplo%20de%20un%20Informe/Imagenes/Flujograma.png?raw=true">
 </p>
 
  
