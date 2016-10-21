@@ -41,7 +41,9 @@ El siguiente es un ejemplo de un informe, la informacion es irrelevante, más lo
 ### Profesor : `Tania Calle - Adrian Eguez`
 ### Número de informe : `1`
 
+<a name="cabecera"></a>
 ## Índice de contenidos
+
 
 - <a href="#tema">Tema</a>
 - <a href="#objetivos">Objetivos</a>
