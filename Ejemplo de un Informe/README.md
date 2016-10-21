@@ -26,6 +26,8 @@ Un informe debe de seguir la siguiente estructura:
 
 # Cabecera heading<a name="cabecera"></a>
 
+<img src="https://raw.githubusercontent.com/adrianeguez/Tec_Web_Js_2016_B/01-HTML/Graficos/HTTP%20METHODS.png">
+ 
 
 
 
@@ -72,5 +74,4 @@ Un informe debe de seguir la siguiente estructura:
 
 
 
-
-<a name="sometext">A la cabecera</a>
+<a href="#heading">A la cabecera</a>
