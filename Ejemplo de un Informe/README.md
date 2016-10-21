@@ -29,8 +29,12 @@ El siguiente es un ejemplo de un informe, la informacion es irrelevante, más lo
 
 # Introducción a la Web
 
-### Materia : `Tecnologías Web con JavaScript` 
-<div style="text-align:center"><img src="http://www.javatpoint.com/images/javascript/javascript_logo.png" width="300" height="200"></div>
+### Materia : `Tecnologías Web con JavaScript`
+
+<p align="center">
+<img src="http://www.javatpoint.com/images/javascript/javascript_logo.png" width="300" height="200">
+</p>
+
 ### Tema : `Introducción a la Web` 
 ### Fecha : `2016-10-21`
 ### Estudiante : `Vicente Adrian Eguez Sarzosa`
