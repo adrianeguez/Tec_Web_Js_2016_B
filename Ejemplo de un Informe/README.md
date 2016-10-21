@@ -115,60 +115,29 @@ Por ultimo podemos centrar las imagenes de la siguiente manera:
 
 ### Links dentro de github
 
-Para nosotros utilizar los Links dentro de Github debemos de hacer dos cosas,
+Para nosotros utilizar los Links dentro de Github debemos de hacer dos cosas:
 
-Definir un anchor name donde nosotros queramos mover cuando demos clic de la siguiente manera y formate (**NOTESE QUE ESTAN JUNTAS**):
+1. Definir un anchor name donde nosotros queramos mover cuando demos clic de la siguiente manera y formate (**NOTESE QUE ESTAN JUNTAS**):
 
-```
-## titulo2<a name="nombre"></a>
-```
-Después de esto debemos de linkear mediante un texto por ejemplo en una lista de la siguiente manera (**NO ELVIDAR EL `#`**):
+  ```
+  ## titulo2<a name="nombre"></a>
+  ```
+2. Después de esto debemos de linkear mediante un texto por ejemplo en una lista de la siguiente manera (**NO ELVIDAR EL `#`**):
  
-```
-- <a href="#nombre">Dale clic aqui para ir al titulo 2</a>
-```
+  ```
+  - <a href="#nombre">Dale clic aqui para ir al titulo 2</a>
+  ```
 
 ## Conclusiones y Recomendaciones<a name="conrec"></a>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- Se recomienda mejorar la presentacion
+- Se recomienda usar el ir a cabecera despues de terminar una seccion
+- Se aprendio el uso de HTML con Markdown
+- Conocimos herramientas de desarrollo web como postman e inspector web
+- Desarrollamos conocimientos de introducción Web
 
 <a href="#cabecera">A la cabecera</a>
+
+# ¡Gracias por su atención!
+
+Author: [Adrian Eguez](https://github.com/adrianeguez)
