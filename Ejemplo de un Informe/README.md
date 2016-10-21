@@ -50,10 +50,11 @@ El siguiente es un ejemplo de un informe, la informacion es irrelevante, más lo
   * <a href="#defhtml">Definicion HTML</a>
 - <a href="#desarrollo">Desarrollo de la Práctica</a>
 - <a href="#conrec">Conclusiones y Recomendaciones</a> 
+
 <a name="tema"></a>
 ## Tema
+El tema de la práctica es: `Introduccion a la Web`
 
-`Introduccion a la Web`
 <a name="objetivos"></a>
 ## Objetivos
 
