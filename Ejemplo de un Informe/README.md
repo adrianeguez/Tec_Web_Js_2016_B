@@ -61,8 +61,9 @@ El siguiente es un ejemplo de un informe, la informacion es irrelevante, más lo
 
 En informática, la World Wide Web (WWW) o red informática mundial1 es un sistema de distribución de documentos de hipertexto o hipermedios interconectados y accesibles vía Internet. Con un navegador web, un usuario visualiza sitios web compuestos de páginas web que pueden contener texto, imágenes, vídeos u otros contenidos multimedia, y navega a través de esas páginas usando hiperenlaces. (Fuente: [Wikipedia](https://es.wikipedia.org/wiki/World_Wide_Web))
 <br><br>
-
-<div style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/WWW_logo_by_Robert_Cailliau.svg/240px-WWW_logo_by_Robert_Cailliau.svg.png" width="300" height="200"></div>
+<p align="center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/WWW_logo_by_Robert_Cailliau.svg/240px-WWW_logo_by_Robert_Cailliau.svg.png" width="300" height="200">
+</p>
 <br><br>
 ### Historia y Facts
 
@@ -71,7 +72,10 @@ La Web se desarrolló entre marzo de 1989 y diciembre de 1990.2 3 por el inglés
 ### Imagenes desde Github **IMPORTANTE**
 
 Se pueden usar imágenes desde nuestros archivos en github,
+<p align="center">
 <img src="https://raw.githubusercontent.com/adrianeguez/Tec_Web_Js_2016_B/01-HTML/Graficos/HTTP%20METHODS.png">
+</p>
+
  
 
 
