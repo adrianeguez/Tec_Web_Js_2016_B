@@ -11,6 +11,13 @@
 
 ---
 
+### Descripción:
+
+* Edad: 21 años
+* Estudiante de la Facultad de Ingeniería de Sistemas de la Escuela Politécnica Nacional
+* Cursando Sexto Semestre
+
+---
 ### Enlace al repositorio
 
  [Repositorio](https://github.com/santy-101/Tec_Web) 
