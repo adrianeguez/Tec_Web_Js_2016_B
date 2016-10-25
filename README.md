@@ -1,12 +1,16 @@
 # Clase 2
 
-## Levantar servidor web
+
+## Instalar el Servidor Web
+
 
 ```
 > npm install -g http-server
 ```
 
 - `-g` es el comando para instalarlo globalmente
+
+## Levantar servidor web
 
 ```
 > http-server -c10 
