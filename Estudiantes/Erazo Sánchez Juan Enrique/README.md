@@ -10,5 +10,6 @@
 
 **Curso de Tecnologías Web con Javascript**
 
+<Este comentario se lo añadió para verificar si se realiza correctamente el commit>
 
 [Link del repositorio](https://github.com/vengatus/Tec_Web_Js_2016_B)
