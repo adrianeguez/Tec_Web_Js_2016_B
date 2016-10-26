@@ -1,4 +1,4 @@
-# Clase 2
+# Clase 3
 
 
 ## Instalar el Servidor Web
@@ -19,7 +19,9 @@
 - `-c10` es el comando para que el cache dure 10ms
 
 
+## Bootstrap
 
+Es un Framework CSS
 
 
 
