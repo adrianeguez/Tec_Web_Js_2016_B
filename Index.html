@@ -1,99 +1,163 @@
 <!-- html:5 EMMET-->
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
     <script>
-        
-//        alert('Hola');
-//        console.log('Hola desde la consola');
-        
-//        var texto="Texto";
-//        console.log(texto);
-//        
-//        var textoNumero="2";
-//        console.log('Valor cuando es string');
-//        console.log(textoNumero);
-//        
-//        textoNumero=2;
-//        console.log('Valor cuando es numero');
-//        console.log(textoNumero);
-//        
-//        var numero = 1;
-//        console.log(numero);
-//        
-//        var float = 1.223; 
-//        console.log(float);
-//        
-//        textoNumero=float;
-//        console.log('Valor cuando es float');
-//        console.log(textoNumero);
-//        
-//        
-//        var booleanTrue = true;
-//        console.log(booleanTrue);
-//        
-//        textoNumero=booleanTrue;
-//        console.log('Valor cuando es true');
-//        console.log(textoNumero);
-//        
-//        
-//        var booleanFalse = false;
-//        console.log(booleanFalse);
-//        
-//        textoNumero=booleanFalse;
-//        console.log('Valor cuando es false');
-//        console.log(textoNumero);
-//        
-//        var varNull = null;
-//        console.log(varNull);
-//        
-//        textoNumero=varNull;
-//        console.log('Valor cuando es null');
-//        console.log(textoNumero);
-//        
-//        
-//        var varUndefined = undefined;
-//        console.log(varUndefined);
-//        
-//        textoNumero=varUndefined;
-//        console.log('Valor cuando es undefinde');
-//        console.log(textoNumero);
-        
-        
-        var arregloString = ['1','2','3'];
-        console.log(arregloString);
-        
-        var arregloNumeros = [1,2,3];
-        console.log(arregloNumeros);
-        
-        var arregloFloat = [1.2,2.3,3.4123];
-        console.log(arregloFloat);
-        
-        var arregloBooleano = [false,true,true];
-        console.log(arregloBooleano);
-        
-        var arregloNull = [null,null,null];
-        console.log(arregloNull);
-        
-        var arregloUndefined = [undefined,undefined,undefined];
-        console.log(arregloUndefined);
-       
-        
-        
-        
-        
-        
-        
-        
-        
+        //        alert('Hola');
+        //        console.log('Hola desde la consola');
 
-        
-        
+        //VARIABLES
+
+        //        var texto="Texto";
+        //        console.log(texto);
+        //        
+        //        var textoNumero="2";
+        //        console.log('Valor cuando es string');
+        //        console.log(textoNumero);
+        //        
+        //        textoNumero=2;
+        //        console.log('Valor cuando es numero');
+        //        console.log(textoNumero);
+        //        
+        //        var numero = 1;
+        //        console.log(numero);
+        //        
+        //        var float = 1.223; 
+        //        console.log(float);
+        //        
+        //        textoNumero=float;
+        //        console.log('Valor cuando es float');
+        //        console.log(textoNumero);
+        //        
+        //        
+        //        var booleanTrue = true;
+        //        console.log(booleanTrue);
+        //        
+        //        textoNumero=booleanTrue;
+        //        console.log('Valor cuando es true');
+        //        console.log(textoNumero);
+        //        
+        //        
+        //        var booleanFalse = false;
+        //        console.log(booleanFalse);
+        //        
+        //        textoNumero=booleanFalse;
+        //        console.log('Valor cuando es false');
+        //        console.log(textoNumero);
+        //        
+        //        var varNull = null;
+        //        console.log(varNull);
+        //        
+        //        textoNumero=varNull;
+        //        console.log('Valor cuando es null');
+        //        console.log(textoNumero);
+        //        
+        //        
+        //        var varUndefined = undefined;
+        //        console.log(varUndefined);
+        //        
+        //        textoNumero=varUndefined;
+        //        console.log('Valor cuando es undefinde');
+        //        console.log(textoNumero);
+
+        //ARREGLOS
+
+        //        var arregloString = ['1','2','3'];
+        //        console.log(arregloString);
+        //        
+        //        var arregloNumeros = [1,2,3];
+        //        console.log(arregloNumeros);
+        //        
+        //        var arregloFloat = [1.2,2.3,3.4123];
+        //        console.log(arregloFloat);
+        //        
+        //        var arregloBooleano = [false,true,true];
+        //        console.log(arregloBooleano);
+        //        
+        //        var arregloNull = [null,null,null];
+        //        console.log(arregloNull);
+        //        
+        //        var arregloUndefined = [undefined,undefined,undefined];
+        //        console.log(arregloUndefined);
+        //        
+        //        var arregloTodo = ["Nombre"
+        //                           ,123
+        //                           ,3.1416
+        //                           ,true
+        //                           ,false
+        //                           ,undefined
+        //                           ,null
+        //                           ,"Apellido"];
+        //        
+        //        console.log(arregloTodo);
+        //        console.log(arregloTodo.length);
+
+
+        //OBJETOS
+        var michelle = 'Nombre Michelle';
+        var adrian = {
+            'nombre': 'Adrian',
+            'apellido': 'Eguez',
+            edad: 27,
+            mascotas: ['Cachetes', 'Oso', 'BJ', 123, {
+                nombre: michelle
+            }],
+            hermanos: [{
+                    nombre: 'Felipe',
+                    apellido: 'Eguez'
+            }, {
+                    nombre: 'Carlos',
+                    apellido: 'Eguez'
+            }
+                     ],
+            getNombre: function () {
+                return this.nombre;
+            },
+            getApellido: function () {
+                return this.apellido;
+            },
+            setApellido: function (nuevoApellido) {
+                this.apellido = nuevoApellido;
+            }
+        }
+
+        //        console.log('Acceder Nombre');
+        //        console.log(adrian.nombre);
+        //
+        //        console.log('Acceder Apellido');
+        //        console.log(adrian.apellido);
+        //
+        //        console.log('Acceder Hermanos');
+        //        console.log(adrian.hermanos);
+
+
+
+        console.log(adrian.getNombre());
+        console.log(adrian.getApellido());
+        adrian.setApellido('Sarzosa');
+        console.log(adrian.getApellido());
+
+
+
+
+        //        <adrian>
+        //            <nombre>Adrian</nombre>
+        //            <apellido>Eguez</apellido>
+        //            <edad>27</edad>
+        //        </adrian>
     </script>
+
+
+
+
+
 </head>
+
 <body>
-    
+
 </body>
+
 </html>
