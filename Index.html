@@ -97,32 +97,34 @@
 
 
         //OBJETOS
-        var michelle = 'Nombre Michelle';
-        var adrian = {
-            'nombre': 'Adrian',
-            'apellido': 'Eguez',
-            edad: 27,
-            mascotas: ['Cachetes', 'Oso', 'BJ', 123, {
-                nombre: michelle
-            }],
-            hermanos: [{
-                    nombre: 'Felipe',
-                    apellido: 'Eguez'
-            }, {
-                    nombre: 'Carlos',
-                    apellido: 'Eguez'
-            }
-                     ],
-            getNombre: function () {
-                return this.nombre;
-            },
-            getApellido: function () {
-                return this.apellido;
-            },
-            setApellido: function (nuevoApellido) {
-                this.apellido = nuevoApellido;
-            }
-        }
+        
+//        var michelle = 'Nombre Michelle';
+//        var adrian = {
+//            'nombre': 'Adrian',
+//            'apellido': 'Eguez',
+//            edad: 27,
+//            mascotas: ['Cachetes', 'Oso', 'BJ', 123, {
+//                nombre: michelle
+//            }],
+//            hermanos: [{
+//                    nombre: 'Felipe',
+//                    apellido: 'Eguez'
+//            }, {
+//                    nombre: 'Carlos',
+//                    apellido: 'Eguez'
+//            }
+//                     ],
+//            getNombre: function () {
+//                return this.nombre;
+//            },
+//            getApellido: function () {
+//                return this.apellido;
+//            },
+//            setApellido: function (nuevoApellido) {
+//                this.apellido = nuevoApellido;
+//            }
+//        }
+        
 
         //        console.log('Acceder Nombre');
         //        console.log(adrian.nombre);
@@ -135,12 +137,45 @@
 
 
 
-        console.log(adrian.getNombre());
-        console.log(adrian.getApellido());
-        adrian.setApellido('Sarzosa');
-        console.log(adrian.getApellido());
+//        console.log(adrian.getNombre());
+//        console.log(adrian.getApellido());
+//        adrian.setApellido('Sarzosa');
+//        console.log(adrian.getApellido());
 
+        var count=10;
+        var arregloNumero = [];
+//        var objetoVacio = {};
+        
+        console.log('Empieza');
+        console.log(arregloNumero);
+        
+while(count>0){
 
+    if(count%2==0){
+        console.log('El numero: '+count+' es par');
+    }else{
+        console.log('El numero: '+count+' es impar');
+    }
+    arregloNumero.push(count);
+    //count=count+1;
+    count--;
+}
+        arregloNumero.pop();
+        arregloNumero.splice(0,1,);
+        console.log('Se acaba');
+        console.log(arregloNumero);
+        
+            
+        
+        
+var numSheep = 4;
+var monthNumber = 1;
+var monthsToPrint = 12;
+
+        
+        
+        
+        
 
 
         //        <adrian>
