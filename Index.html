@@ -151,25 +151,31 @@
 
         while (count > 0) {
 
-            if (count % 2 == 0) {
-                console.log('El numero: ' + count + ' es par');
-            } else {
-                console.log('El numero: ' + count + ' es impar');
+            if (count > 1 && count <= 10) {
+
+                if (count % 2 == 0) {
+                    console.log('El numero: ' + count + ' es par');
+                } else {
+                    //                console.log('El numero: ' + count + ' es impar');
+                }
+
             }
+
+
             arregloNumero.push(count);
             //count=count+1;
             count--;
         }
-        
-        var i=0;
-        for(var i=0;;i<algo;i++){
-            
+
+        //        var i=0;
+        for (var i = 10; i > 0; i--) {
+
         }
-        
-//        arregloNumero.pop();
-//        arregloNumero.splice(0, 1, );
-//        console.log('Se acaba');
-//        console.log(arregloNumero);
+
+        //        arregloNumero.pop();
+        //        arregloNumero.splice(0, 1, );
+        //        console.log('Se acaba');
+        //        console.log(arregloNumero);
 
 
 
@@ -179,8 +185,22 @@
         var monthsToPrint = 12;
 
         while (monthNumber <= monthsToPrint) {
+            console.log('monthNumber');
+            console.log(monthNumber);
             numSheep = numSheep * 4;
             console.log('texto' + numSheep + 'texto' + monthNumber);
+
+            if (monthNumber % 4 == 0) {
+                console.log('TEXTO EN 4 -' + numSheep * 0.75);
+                numSheep = numSheep - numSheep * 0.75;
+                
+            } else {
+                if (numSheep > 10000) {
+                    numSheep = numSheep / 2;
+                    console.log('TEXTO -' + numSheep);
+                }
+
+            }
 
             monthNumber++;
 
