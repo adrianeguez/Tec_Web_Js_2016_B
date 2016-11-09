@@ -270,18 +270,84 @@
 //        
 //console.log(funcionCalcularString(arreglo));//3
        
-        var nombreFuncion = function(){
-            console.log('nombreFuncion');
-        }
-        nombreFuncion();
+//        var nombreFuncion = function(){
+//            console.log('nombreFuncion');
+//        }
+//        nombreFuncion();
+//        
+//        function nombre(){
+//            console.log('nombre');
+//        }
+//        nombre();
         
-        function nombre(){
-            console.log('nombre');
-        }
-        nombre();
         
+//        
+//        = [ "ThomasMeeks",
+//           "Gregg Pollack",
+//          "Christine Wong",
+//             "Dan McGaw"];
+
+//var passengers = [ ["Thomas", "Meeks"],
+//                   ["Gregg", "Pollack"],
+//                   ["Christine", "Wong"],
+//                   ["Dan", "McGaw"] ];
+//        
+//var modifiedNames = passengers.map(function(arrayNombreApellido){
+//    return arrayNombreApellido[0]+" "+arrayNombreApellido[1];
+//});
+//        
+//modifiedNames.map(function(nombrePasajero){
+//    alert('Yo, '+nombrePasajero+' !')
+//})
         
+//var puzzlers = [
+//    function(input){
+//        return ((3*input)-8);
+//    },
+//    function(input){
+//        return (Math.pow((input+2),3));
+//    },
+//    function(input){
+//        return ((Math.pow(input,2))-9);
+//    },
+//    function(input){
+//        return (input%4);
+//    }
+//]
+//    console.log(puzzlers[0](5));
+//    console.log(puzzlers[1](5));
+//    console.log(puzzlers[2](5));
+//    console.log(puzzlers[3](5));
+//        
+//        
+//    console.log(puzzlers[0](7));
+//    console.log(puzzlers[1](7));
+//    console.log(puzzlers[2](7));
+//    console.log(puzzlers[3](7));
+
+//function adventureSelector(userChoice) {
+//    if(userChoice==1){
+//        return function(){
+//            alert('Doom');
+//        }
+//    }
+//    if(userChoice==2){
+//        return function(){
+//            alert('Lake of Despair');
+//        }
+//    }
+//    if(userChoice==3){
+//        return function(){
+//            alert('Caves of Catastrophe');
+//        }
+//    }
+//
+//}
+//        console.log(adventureSelector(1)());
+//        console.log(adventureSelector(2));
+//        console.log(adventureSelector(3);
         
+    
         
         
 //        console.log(typeof 1);
@@ -297,6 +363,41 @@
         //            <apellido>Eguez</apellido>
         //            <edad>27</edad>
         //        </adrian>
+        
+        
+        
+        var puzzlers = [
+          function(a) { return 8 * a - 10; },
+          function(a) { return (a - 3) * (a - 3) * (a - 3); },
+          function(a) { return a * a + 4; },
+          function(a) { return a % 5; }
+        ];
+        var start = 2;
+
+        console.log(puzzlers[3](puzzlers[2](puzzlers[1](puzzlers[0](2)))));
+        
+        
+        
+    var applyAndEmpty = function(input,queue){
+        var longitud = queue.length;
+        for(var i = 0; i<longitud;i++){
+            console.log('Iteracion',i);
+//            console.log(queue[i]);
+//            console.log(queue[i](input));
+            console.log(input);
+            input = queue[0](input);
+            console.log(input);
+            queue.splice(0,1);
+            
+        }
+        console.log(queue);
+        return input;
+    }
+    
+    console.log(applyAndEmpty(start,puzzlers));
+        
+        
+        
     </script>
 
 
