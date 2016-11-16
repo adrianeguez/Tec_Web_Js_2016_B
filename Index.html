@@ -97,32 +97,34 @@
 
 
         //OBJETOS
-        var michelle = 'Nombre Michelle';
-        var adrian = {
-            'nombre': 'Adrian',
-            'apellido': 'Eguez',
-            edad: 27,
-            mascotas: ['Cachetes', 'Oso', 'BJ', 123, {
-                nombre: michelle
-            }],
-            hermanos: [{
-                    nombre: 'Felipe',
-                    apellido: 'Eguez'
-            }, {
-                    nombre: 'Carlos',
-                    apellido: 'Eguez'
-            }
-                     ],
-            getNombre: function () {
-                return this.nombre;
-            },
-            getApellido: function () {
-                return this.apellido;
-            },
-            setApellido: function (nuevoApellido) {
-                this.apellido = nuevoApellido;
-            }
-        }
+
+        //        var michelle = 'Nombre Michelle';
+        //        var adrian = {
+        //            'nombre': 'Adrian',
+        //            'apellido': 'Eguez',
+        //            edad: 27,
+        //            mascotas: ['Cachetes', 'Oso', 'BJ', 123, {
+        //                nombre: michelle
+        //            }],
+        //            hermanos: [{
+        //                    nombre: 'Felipe',
+        //                    apellido: 'Eguez'
+        //            }, {
+        //                    nombre: 'Carlos',
+        //                    apellido: 'Eguez'
+        //            }
+        //                     ],
+        //            getNombre: function () {
+        //                return this.nombre;
+        //            },
+        //            getApellido: function () {
+        //                return this.apellido;
+        //            },
+        //            setApellido: function (nuevoApellido) {
+        //                this.apellido = nuevoApellido;
+        //            }
+        //        }
+
 
         //        console.log('Acceder Nombre');
         //        console.log(adrian.nombre);
@@ -135,19 +137,267 @@
 
 
 
-        console.log(adrian.getNombre());
-        console.log(adrian.getApellido());
-        adrian.setApellido('Sarzosa');
-        console.log(adrian.getApellido());
+        //        console.log(adrian.getNombre());
+        //        console.log(adrian.getApellido());
+        //        adrian.setApellido('Sarzosa');
+        //        console.log(adrian.getApellido());
+
+        //        var count = 10;
+        //        var arregloNumero = [];
+        //        //        var objetoVacio = {};
+        //
+        //        console.log('Empieza');
+        //        console.log(arregloNumero);
+
+        //        while (count > 0) {
+        //
+        //            if (count > 1 && count <= 10) {
+        //
+        //                if (count % 2 == 0) {
+        //                    console.log('El numero: ' + count + ' es par');
+        //                } else {
+        //                    //                console.log('El numero: ' + count + ' es impar');
+        //                }
+        //
+        //            }
+        //
+        //
+        //            arregloNumero.push(count);
+        //            //count=count+1;
+        //            count--;
+        //        }
+
+        //        var i=0;
+        //        for (var i = 10; i > 0; i--) {
+        //
+        //        }
+
+        //        arregloNumero.pop();
+        //        arregloNumero.splice(0, 1, );
+        //        console.log('Se acaba');
+        //        console.log(arregloNumero);
 
 
 
+
+        //        var numSheep = 4;
+        //        var monthNumber = 1;
+        //        var monthsToPrint = 12;
+        //
+        //        while (monthNumber <= monthsToPrint) {
+        //            console.log('monthNumber');
+        //            console.log(monthNumber);
+        //            numSheep = numSheep * 4;
+        //            console.log('texto' + numSheep + 'texto' + monthNumber);
+        //
+        //            if (monthNumber % 4 == 0) {
+        //                console.log('TEXTO EN 4 -' + numSheep * 0.75);
+        //                numSheep = numSheep - numSheep * 0.75;
+        //                
+        //            } else {
+        //                if (numSheep > 10000) {
+        //                    numSheep = numSheep / 2;
+        //                    console.log('TEXTO -' + numSheep);
+        //                }
+        //
+        //            }
+        //
+        //            monthNumber++;
+        //
+        //        }
+
+
+
+
+
+        //var respuesta = prompt("Cual es tu edad, Amigo?");
+        //        
+        //console.log(parseInt(respuesta));
+
+
+        //        3 numeros
+        //        multiplique
+        //        
+        //        function multiplicar3(numero1, numero2, numero3) {
+        //            return numero1 * numero2 * numero3
+        //        }
+        //
+        //        console.log(multiplicar3(2, 6, 9));
+
+        function mayorNumero(numero1, numero2) {
+            if (numero1 > numero2) {
+                console.log(numero1);
+            }
+            if (numero2 > numero1) {
+                console.log(numero2);
+            }
+            if (numero1 == numero2) {
+                console.log(numero1);
+            }
+        }
+
+//        mayorNumero(5, 9)
+//        mayorNumero(9, 5)
+//        mayorNumero(9, 9)
+
+
+//        function mystery(x, y) { 
+//            //138 resultado
+//            var a = 4 * x * y;
+//            var b = 3 * y + 5;
+//            var c = a + b;
+//            return c;
+//        }
+//        
+//        function mystery2(x, y) { 
+//            return (4 * x * y) + (3 * y + 5);
+//        }
+//            
+//        console.log(mystery(4,7));
+//        console.log(mystery2(4,7));
+//        var arreglo = [1,'2',3,'4',5,'seis'];
+//        
+//function funcionCalcularString(arreglo){
+//    var numeroStringsEnArreglo = 0;
+//    for(var i=0;i<arreglo.length;i++){
+//        if(typeof arreglo[i]=='string'){
+//            numeroStringsEnArreglo++;
+//        }
+//    }
+//    return numeroStringsEnArreglo;
+//
+//}
+//        
+//console.log(funcionCalcularString(arreglo));//3
+       
+//        var nombreFuncion = function(){
+//            console.log('nombreFuncion');
+//        }
+//        nombreFuncion();
+//        
+//        function nombre(){
+//            console.log('nombre');
+//        }
+//        nombre();
+        
+        
+//        
+//        = [ "ThomasMeeks",
+//           "Gregg Pollack",
+//          "Christine Wong",
+//             "Dan McGaw"];
+
+//var passengers = [ ["Thomas", "Meeks"],
+//                   ["Gregg", "Pollack"],
+//                   ["Christine", "Wong"],
+//                   ["Dan", "McGaw"] ];
+//        
+//var modifiedNames = passengers.map(function(arrayNombreApellido){
+//    return arrayNombreApellido[0]+" "+arrayNombreApellido[1];
+//});
+//        
+//modifiedNames.map(function(nombrePasajero){
+//    alert('Yo, '+nombrePasajero+' !')
+//})
+        
+//var puzzlers = [
+//    function(input){
+//        return ((3*input)-8);
+//    },
+//    function(input){
+//        return (Math.pow((input+2),3));
+//    },
+//    function(input){
+//        return ((Math.pow(input,2))-9);
+//    },
+//    function(input){
+//        return (input%4);
+//    }
+//]
+//    console.log(puzzlers[0](5));
+//    console.log(puzzlers[1](5));
+//    console.log(puzzlers[2](5));
+//    console.log(puzzlers[3](5));
+//        
+//        
+//    console.log(puzzlers[0](7));
+//    console.log(puzzlers[1](7));
+//    console.log(puzzlers[2](7));
+//    console.log(puzzlers[3](7));
+
+//function adventureSelector(userChoice) {
+//    if(userChoice==1){
+//        return function(){
+//            alert('Doom');
+//        }
+//    }
+//    if(userChoice==2){
+//        return function(){
+//            alert('Lake of Despair');
+//        }
+//    }
+//    if(userChoice==3){
+//        return function(){
+//            alert('Caves of Catastrophe');
+//        }
+//    }
+//
+//}
+//        console.log(adventureSelector(1)());
+//        console.log(adventureSelector(2));
+//        console.log(adventureSelector(3);
+        
+    
+        
+        
+//        console.log(typeof 1);
+//        console.log(typeof "1");
+//        console.log(typeof []);
+//        console.log(typeof {});
+//        console.log(typeof true);
+//        console.log(typeof false);
+//        console.log(typeof 1.2);
 
         //        <adrian>
         //            <nombre>Adrian</nombre>
         //            <apellido>Eguez</apellido>
         //            <edad>27</edad>
         //        </adrian>
+        
+        
+        
+        var puzzlers = [
+          function(a) { return 8 * a - 10; },
+          function(a) { return (a - 3) * (a - 3) * (a - 3); },
+          function(a) { return a * a + 4; },
+          function(a) { return a % 5; }
+        ];
+        var start = 2;
+
+        console.log(puzzlers[3](puzzlers[2](puzzlers[1](puzzlers[0](2)))));
+        
+        
+        
+    var applyAndEmpty = function(input,queue){
+        var longitud = queue.length;
+        for(var i = 0; i<longitud;i++){
+            console.log('Iteracion',i);
+//            console.log(queue[i]);
+//            console.log(queue[i](input));
+            console.log(input);
+            input = queue[0](input);
+            console.log(input);
+            queue.splice(0,1);
+            
+        }
+        console.log(queue);
+        return input;
+    }
+    
+    console.log(applyAndEmpty(start,puzzlers));
+        
+        
+        
     </script>
 
 
