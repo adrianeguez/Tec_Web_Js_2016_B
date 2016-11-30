@@ -21,12 +21,12 @@ var usuarios = [
         cedula:'011283934'
     }
 ]
-
-
+var contador = 3
 
 app.get('/', function (req, res) {
-    res.send('Hello World!')
+    res.send('Bienvenidos al Api de Usuarios!')
 })
+
 
 app.get('/Usuario', function (req, res) {
 
@@ -34,82 +34,109 @@ app.get('/Usuario', function (req, res) {
     
 })
 
+
+
+
 app.get('/Usuario/:idUsuario', function (req, res) {
     
     var idActual = req.params.idUsuario;
+    
     for(var i=0;i<usuarios.length;i++){
+        //Buscamos en todo el arreglo de Usuarios
         if(idActual == usuarios[i].id){
+            //respondemos al usuario con idActual
             res.json(usuarios[i]);
         }
     }
+       
+    //Si no lo encuentra responda que no existe
     res.send('No existe el Usuario');
     
 })
 
-app.get('/TecnologiasWeb', function (req, res) {
-    res.send('con Javascript!')
-})
-
-
-app.post('/TecnologiasWeb', function (req, res) {
-
-    //request => req
-    //response => res
+app.post('/Usuario', function (req, res) {
     
-    var parametros = req.params;
     
-    console.log(parametros);
+    console.log(req.query.nombre);
     
-    var usuario = {
-        nombre:'Adrian',
-        cedula:'000000000'
+    console.log(req.query.cedula);
+    
+    if(!req.query.nombre){
+        res.send('No envio el nombre');
     }
     
+    if(!req.query.cedula){
+        res.send('No envio la cedula');
+    }
     
-    res.append('token', '1234');
-    res.json(usuario);
-    
-    
-//    usuario = {
-//        nombre:usuario.nombre,
-//        cedula:usuario.cedula,
-//        apellido:''
-//    }
-    
-    
-    
-    
-    
-    
-    
-    
-//    console.log('Lo que tengo en el REQUEST es:')
-//    console.log(req);
-//    console.log('Lo que tengo en el RESPONSE es:')
-//    console.log(res);
+    var nuevoUsuario = {
+        id:contador+1,
+        nombre:req.query.nombre,
+        cedula:req.query.cedula
+    }
+    usuarios.push(nuevoUsuario);
+    contador = contador++;
+    res.json(nuevoUsuario)
+
+//    //Deprecated
+//    console.log(req.param('nombre'));
 //    
-//    console.log('Cabeceras Req:')
-//    console.log(req.headers);
-//    console.log('Cabeceras Res:')
-//    console.log(res.headers);
+//    //Busca el parametro nombre
+//    console.log(req.query.nombre);
 //    
-
-  
+//    //Parametros URL
+//    //console.log(req.params);
+//
+//    res.json(usuarios);
     
-//    res.send('{nombre:Adrian,cedula:171813714}');
-    
-//    if(si los minutos son pares){
-//        res.send('minutos pares')
-//    }else{
-//        res.send('minutos impares')
-//    }
-
-    
-    //res.send('Picachu');
-
-
 })
 
+app.post('/Usuario', function (req, res) {
+    
+    
+    console.log(req.query.nombre);
+    
+    console.log(req.query.cedula);
+    
+    if(!req.query.nombre){
+        res.send('No envio el nombre');
+    }
+    
+    if(!req.query.cedula){
+        res.send('No envio la cedula');
+    }
+    
+    var nuevoUsuario = {
+        id:contador+1,
+        nombre:req.query.nombre,
+        cedula:req.query.cedula
+    }
+    usuarios.push(nuevoUsuario);
+    contador = contador++;
+    res.json(nuevoUsuario)
+
+//    //Deprecated
+//    console.log(req.param('nombre'));
+//    
+//    //Busca el parametro nombre
+//    console.log(req.query.nombre);
+//    
+//    //Parametros URL
+//    //console.log(req.params);
+//
+//    res.json(usuarios);
+    
+})
+
+app.put('/Usuario/:idUsuario', function (req, res) {
+    //implementacion
+    //El Usuario Actualizado
+})
+
+app.delete('/Usuario/:idUsuario', function (req, res) {
+    //implementacion
+    //El Usuario Borrado
+})
 
 
 app.listen(puerto, function () {
