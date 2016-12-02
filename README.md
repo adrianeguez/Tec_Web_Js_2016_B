@@ -5,6 +5,7 @@
 
 * El estudiante debe de realizar una o varias paginas web estáticas donde se muestren las caracteristicas del Ecmascript 2015.
 * Su pagina debe de tener un Menu que funcione y lleve de una pagina a otra.
+* El proyecto debe de ser realizado utilizando un FRAMEWORK CSS que NO SEA BOOTSTRAP.
 * Las paginas son divididas en: 
     1. `Inicio (aqui uno elije a donde ir)`
     2. `var vs let vs const`
@@ -26,9 +27,11 @@
 Los estudiantes tendran algunso recursos disponibles para poder hacer su deber:
 
 - [Cheat Sheet (o en nuestro medio conocida como 'polla') de Ecmascript 2015](https://github.com/DrkSephy/es6-cheatsheet#var-versus-let--const)
--[Cheat Sheet (o en nuestro medio conocida como 'polla') de Ecmascript 2015](https://github.com/DrkSephy/es6-cheatsheet#var-versus-let--const)
+-[Videos del curso de CodeSchool de Ecmascript 2015](https://drive.google.com/open?id=0BykrLtGfC4omU0ZfSFFIU3R1RlE)
 
-## Listas Ordenadas
+## Ejemplo
+
+Ademas de todo estos recursos les dejo un ejemplo de más o menos como tienen que realizar su proyecto, el ejemplo esta dentro de este repositorio en la carpeta `PROYECTO`
 
 1. El numero 
 2. De las listas
