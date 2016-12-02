@@ -1,12 +1,32 @@
-# Repositorio de Tecnologias Web con Js
+# Ejemplo de Proyecto ECMASCRIPT 2015
 
-Este repositorio forma parte del  [curso de tecnologias web](https://github.com/adrianeguez/Tec_Web_Js_2016_B)
 
-## Enfasis de Texto
+## ¿Qué entregar?
 
-* Para nosotros utilizar un texto en **negrita** se utilizan dos "**" (asteriscos).
-* Para nosotros utilizar un texto en *cursiva* vamos a utilizar 1 "*" (asterisco).
-* Para nosotros ~~tachar un texto~~ necesitas usar "~" (tildes).
+* El estudiante debe de realizar una o varias paginas web estáticas donde se muestren las caracteristicas del Ecmascript 2015.
+* Su pagina debe de tener un Menu que funcione y lleve de una pagina a otra.
+* Las paginas son divididas en: 
+    1. `Inicio (aqui uno elije a donde ir)`
+    2. `var vs let vs const`
+    3. `IIFEs ahora Blocks`
+    4. `Arrow Functions`
+    5. `Strings .includes() .repeat()`
+    6. `Template literals`
+    7. `Destructuring arrays`
+    8. `Destructuring objects`
+    9. `Modules export and import`
+    10. `Default Parameters, Rest Parameters, Named Parameters`
+    11. `Spread Operator`
+    12. `Classes`
+    13. `Promises (goodbye callback hell)`
+    14. `Getter and Setter in Classes`
+    
+## Recursos
+
+Los estudiantes tendran algunso recursos disponibles para poder hacer su deber:
+
+- [Cheat Sheet (o en nuestro medio conocida como 'polla') de Ecmascript 2015](https://github.com/DrkSephy/es6-cheatsheet#var-versus-let--const)
+-[Cheat Sheet (o en nuestro medio conocida como 'polla') de Ecmascript 2015](https://github.com/DrkSephy/es6-cheatsheet#var-versus-let--const)
 
 ## Listas Ordenadas
 
