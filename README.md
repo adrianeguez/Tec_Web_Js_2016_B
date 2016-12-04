@@ -35,10 +35,12 @@ Los estudiantes tendran algunos recursos disponibles para poder hacer su deber:
 
 ## ¿Qué subir?
 
-Solamente el link al repositorio de Github.
+* El link al repositorio de Github.
+* Subir el proyecto a [Plnkr](https://plnkr.co/) (es un editor web como JSBIN) [aqui tienen el ejemplo en vivo](https://plnkr.co/edit/t700FKfqlE0tMfXgpIU4?p=preview).
+* Subir el link de [Plnkr](https://plnkr.co/).
 
 ## Ejemplo
 
-[El ejemplo esta en este repositorio de Githubs](https://github.com/adrianeguez/Tec_Web_Js_2016_B/tree/00-1er-bim-ejemplo-proyecto)
+[El ejemplo esta en este repositorio de Github](https://github.com/adrianeguez/Tec_Web_Js_2016_B/tree/00-1er-bim-ejemplo-proyecto)
 
 
