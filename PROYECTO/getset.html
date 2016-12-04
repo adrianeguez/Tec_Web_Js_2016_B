@@ -21,7 +21,7 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-default">
+   <nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -39,7 +39,7 @@
           <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Selecciona un Tema<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="varletconst.html">1.var vs let vs const</a></li>
-            <li><a href="iifes">2.  IIFEs ahora Blocks</a></li>
+            <li><a href="iifes.html">2.  IIFEs ahora Blocks</a></li>
             <li><a href="string.html">3.  Strings .includes() .repeat()</a></li>
             <li><a href="template.html">4.  Template literals</a></li>
             <li><a href="array.html">5.  Destructuring arrays</a></li>
@@ -57,18 +57,66 @@
   </div><!-- /.container-fluid -->
 </nav>
 <div class="container">
-    <div class="jumbotron">
-    <h1>Bienvenidos <small>¡Al Ecmascript 2015!</small></h1>
-    <img src="http://www.troublemaker.xyz/wp-content/uploads/2016/06/es2015.jpg" style="max-height:200px" class="img-responsive center center-block" alt="Responsive image">
-    <br>
-    <p style="font-size:14px" class="text-center">ECMAScript es una especificación de lenguaje de programación publicada por ECMA International. El desarrollo empezó en 1996 y estuvo basado en el popular lenguaje JavaScript propuesto como estándar por Netscape Communications Corporation. Actualmente está aceptado como el estándar ISO 16262.
-
-ECMAScript define un lenguaje de tipos dinámicos ligeramente inspirado en Java y otros lenguajes del estilo de C. Soporta algunas características de la programación orientada a objetos mediante objetos basados en prototipos y pseudoclases.
-    </p>
-    <br>
-    <a class="btn btn-primary btn-lg" href="varletconst.html" role="button">Empieza</a></p>
+    <div class="row">
+      <div class="col-sm-4">
+        <a href="promises.html">
+          <div class="btn sml btn-block btn-success">Atrás - Promises</div>
+        </a>
+      </div>
+      <div class="col-sm-4"></div>
+      <div class="col-sm-4">
+        <a href="index.html">
+          <div class="btn sml btn-block btn-success">Inicio</div>
+        </a>
+      </div>
     </div>
-</div>
+    <h1> Getter and Setter in Classes  <small> metodos de propiedades </small></h1>
+    <h3>Ejemplo descriptivo</h3>
+    <br>
+    <div class="row">
+ <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+        <pre>
+            <code class="JavaScript">
+// var es usado en el JavaScript antiguo y tenia algunos problemas.
+var a = 12;
+
+// let es usado con el nuevo Ecmascript 2015
+let a = 13;
+
+// const es usado para declarar objetos que no se van a modificar, pero si se pueden aumentar
+
+const url = 'http://localhost:1337';
+
+// Un arreglo es un ejemplo que se puede aumentar
+
+const arrayGrande = ['a','b','c'];
+arrayGrande.push('d'); // NO hay error const arrayGrande = ['a','b','c','d'];
+arrayGrande.pop(); // HAY error
+            </code>
+        </pre>
+    </div>
+    <div class="col-sm-2"></div>
+    </div>
+       
+
+    <h3>Descripcion</h3>
+    <p>Las opciones de var, let y const estan disponibles en el Ecmascript 2015. Cada una tiene algunas peculiaridades.</p>
+    <h3>Peculiaridades</h3>
+    <ul>
+        <li>Descripcion 1</li>
+        <li>Descripcion 2</li>
+        <li>Descripcion 3</li>
+        <li>Descripcion 4</li>
+        <li>Descripcion 5</li>
+    </ul>
+    
+
+
+    
+
+
+
 
     
 </body>
