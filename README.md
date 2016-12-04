@@ -37,5 +37,8 @@ Los estudiantes tendran algunos recursos disponibles para poder hacer su deber:
 
 Solamente el link al repositorio de Github.
 
+## Ejemplo
+
+[El ejemplo esta en este repositorio de Githubs](https://github.com/adrianeguez/Tec_Web_Js_2016_B/tree/00-1er-bim-ejemplo-proyecto)
 
 
