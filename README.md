@@ -38,6 +38,12 @@ El sails les pide opciones si no estan definidas, las opciones son:
 El servidor web de sails se encuentra localizado en la carpeta **assets**
 
 
+## Generar Controladores Sailsjs
+
+El servidor web de sails se encuentra localizado en la carpeta **assets**
+
+
+
 
 
 
