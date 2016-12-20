@@ -72,21 +72,7 @@ app.get('/', function (req, res) {
         'utf8',
         function (error, archivoLeido1) {
         todo+=archivoLeido1;
-
-            fs.readFile('./paginas/usuario.html',
-                'utf8',
-                function (error, archivoLeido2) {
-                
-                todo+=archivoLeido2;
-
-                    fs.readFile('./paginas/footer.html',
-                        'utf8',
-                        function (error, archivoLeido3) {
-                            todo+=archivoLeido3;
-                        
-                            res.send(todo);
-                        });
-                });
+        res.send(todo);
 
         });
 
