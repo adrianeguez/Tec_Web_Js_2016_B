@@ -7,7 +7,6 @@
 
 var nodemailer = require('nodemailer');
 
-
 module.exports = {
 
     hola: function (req, res) {

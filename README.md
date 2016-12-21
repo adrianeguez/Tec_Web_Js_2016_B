@@ -58,7 +58,30 @@ El servidor web de sails se encuentra localizado en la carpeta **assets**
 
 Un Api es la fusión de un **Controlador** y de un **Modelo**.
 
+# API REST
 
+## Modelo Usuario
+
+### Crear Usuarios
+
+URL:
+
+´http://localhost:1337/Usuario´
+
+Metodo HTTP:
+
+´POST´
+
+Datos:
+
+
+´´´javascript
+{
+    nombre:'Adrian',
+    apellido:'Eguez',
+    correo:'adrian.eguez@epn.edu.ec'
+}
+´´´
 
 
 
