@@ -19,12 +19,12 @@ module.exports = {
       correo:{
           type:'string',
           email:true,
-          dafaultsTo:'correo@invalido.com'
+          defaultsTo:'correo@invalido.com'
       },
       tipo:{
           type:'string',
           enum:['Perfil','Usuarios','Correos'],
-          dafaultsTo:'Usuarios'
+          defaultsTo:'Usuarios'
       }
 
   }
