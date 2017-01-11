@@ -16,12 +16,17 @@ module.exports = {
             mauricio:{
                 nombre:'Mauricio',
                 cedula:1718137159
-            }
+            },
+            usuarios:[]
         })
+        
+    },
+    crearUsuario:function(req,res){
+        
+        return res.view('vistas/crearUsuario')
         
     }
     
-	
 };
 
 
