@@ -1,25 +1,23 @@
 <div style='background-color:white;color:black;'>
 
-<h1>Crear Usuario</h1>
+  <h1>Crea Usuarios</h1>
+  <p>¡Registrate tu o tus amigos en la aplicación!</p>
 
-<form action="Usuario/CrearUsuarioForm" method="post">
+  <form action="Usuario/CrearUsuarioForm" method="post">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Nombres</label>
+      <input minlength=5 required type="text" class="form-control"  placeholder="Nombres" name="nombres">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Apellidos</label>
+      <input minlength=5 required type="text" class="form-control"  placeholder="Apellidos" name="apellidos">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Correo</label>
+      <input type="email" class="form-control"  placeholder="Correo" name="correo">
+    </div>
+    <button type="submit" class="btn btn-success">Crear Usuario</button>
     <br>
-    <label for="">Nombres</label>
-    <br>
-    <input type="text" name='nombres'>   
-    <br>
-    <label for="">Apellidos</label>
-    <br>
-    <input type="text" name='apellidos'> 
-    <br>
-    <label for="">Correo</label>
-    <br>
-    <input type="text" name='correo'> 
-    <br>
-    
-    <button type="submit">Crear Usuario</button>
-    <br>
-    
-</form>
 
+  </form>
 </div>

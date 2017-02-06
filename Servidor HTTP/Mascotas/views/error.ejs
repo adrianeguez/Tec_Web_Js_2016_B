@@ -1,0 +1,5 @@
+<div class="jumbotron">
+  <h1>¡Tuviste un error!</h1>
+  <p> <%=typeof error.descripcion == 'undefined' ? 'Error desconocido' : error.descripcion%></p>
+  <p><a class="btn btn-danger btn-lg" href="<%=typeof error.url == 'undefined' ? 'Inicio' : error.url%>" role="button">Regresar</a></p>
+</div>

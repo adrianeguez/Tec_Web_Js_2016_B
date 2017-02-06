@@ -1,0 +1,37 @@
+<div style='background-color:white;color:black;'>
+
+  <h1>Edita el Usuario</h1>
+  <p>¡Edita el Usuario !</p>
+  <div class="row">
+    <div class="col-sm-8">
+      <form action="Usuario/EditarUsuarioForm" method="post">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Nombres</label>
+          <input minlength=5 required type="text" class="form-control"  placeholder="Nombres" name="nombres">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Apellidos</label>
+          <input minlength=5 required type="text" class="form-control"  placeholder="Apellidos" name="apellidos">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Correo</label>
+          <input type="email" class="form-control"  placeholder="Correo" name="correo">
+        </div>
+        <input type="hidden" name="id" value="<%=usuario.id%>">
+        <button type="submit" class="btn btn-success">Crear Usuario</button>
+        <br>
+
+      </form>
+    </div>
+    <div class="col-sm-4">
+
+      <h3 class="text-center"> <%=usuario.apellidos%></h3>
+        <h4 class="text-center"> <%=usuario.nombres%></h4>
+        <p class="text-center">
+          <%= usuario.correo == '' ? 'Sin correo' : usuario.correo%>
+        </p>
+    </div>
+  </div>
+
+
+</div>

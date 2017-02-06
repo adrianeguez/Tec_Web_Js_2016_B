@@ -1,0 +1,20 @@
+<div class="row">
+
+  <% for(var i=0; i<usuarios.length; i++){ %>
+    <div class="col-sm-4">
+      <h3 class="text-center"> ID: <%=usuarios[i].id%> -  <%=usuarios[i].apellidos%></h3>
+      <h4 class="text-center"> <%=usuarios[i].nombres%></h4>
+      <p class="text-center">
+        <%= usuarios[i].correo == '' ? 'Sin correo' : usuarios[i].correo%>
+      </p>
+      <a style="color:white" href="/Usuario/destroy/<%=usuarios[i].id%>">
+        <button class="btn btn-block btn-danger"> Borrar</button>
+      </a>
+      <br>
+      <a style="color:white" href="/EditarUsuario?id=<%=usuarios[i].id%>">
+        <button class="btn btn-block btn-success"> Editar</button>
+      </a>
+    </div>
+    <%  } %>
+
+</div>

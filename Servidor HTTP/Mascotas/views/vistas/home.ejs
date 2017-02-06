@@ -1,42 +1,8 @@
-<div style='background-color:white;color:black;'>
-
-    <% var numero1 = 112312312314123123;%>
+<h1>Bienvenidos</h1>
 
 
-        <% 
-    var arregloMascota = [
-        {
-            nombre:'Adrian'
-        },
-        {
-            nombre:'Vicente'
-        },
-        {
-            nombre:'Eguez'
-        }]
-        
-        %>
-
-
-            <h1>Home</h1>
-
-            <h2><%= mauricio.nombre%> - <%= mauricio.cedula%> -  <%= numero1%></h2>
-            
-            
-    <% for(var i=0;i<arregloMascota.length;i++) {%>
-            
-            <h3>Mascota: <%= arregloMascota[i].nombre %></h3>
-            <button></button>
-            
-    <%  }%>
-            
-
+<div class="jumbotron">
+  <h1>Mascotas!</h1>
+  <p>Registra tus mascotas para compartirlas por la web :) </p>
+  <p><a class="btn btn-primary btn-lg" href="/CrearUsuario" role="button">Registra Usuarios</a> <a class="btn btn-primary btn-lg" href="/listarUsuarios" role="button">Listar Usuarios</a> </p>
 </div>
-
-
-
-
-
-
-
-
