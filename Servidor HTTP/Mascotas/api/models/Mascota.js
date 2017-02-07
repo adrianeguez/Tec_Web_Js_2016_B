@@ -8,7 +8,7 @@
 module.exports = {
 
   attributes: {
-      
+
       nombre:{
           type:'string',
           required:true
@@ -27,7 +27,6 @@ module.exports = {
           // Required es OPCIONAL si no queremos registros huerfanos de raza
           required:true
       }
-
   }
 };
 

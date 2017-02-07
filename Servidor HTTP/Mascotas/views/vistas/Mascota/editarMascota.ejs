@@ -1,0 +1,52 @@
+<div style='background-color:white;color:black;'>
+
+  <h1>Editar Mascotas</h1>
+  <p>¡Edita a tu mascotas!</p>
+
+  <div class="row">
+    <div class="col-sm-8">
+      <form action="mascota/editarMascota" method="post">
+        <div class="form-group">
+          <label>Nombre</label>
+          <input required type="text" class="form-control" placeholder="Nombre" name="nombre">
+        </div>
+
+        <div class="form-group">
+          <label>Fecha Nacimiento</label>
+          <input type="date" class="form-control" placeholder="Fecha Nacimiento" name="fechaNacimiento">
+        </div>
+
+        <label for="">Raza</label>
+
+        <select class="form-control" name="idRaza">
+          <% for(var i=0; i<razas.length; i++){ %>
+            <option value='<%=razas[i].id%>'>
+              <%=razas[i].nombre%>
+            </option>
+            <%  } %>
+        </select>
+
+        <br>
+        <label for="">Pais Nacimiento</label>
+        <select class="form-control" name="paisNacimiento">
+          <option value='Ecuador'>Ecuador</option>
+          <option value='Peru'>Peru</option>
+          <option value='Colombia'>Colombia</option>
+        </select>
+        <br>
+        <input type="hidden" name="id" value="<%=mascota.id%>">
+        <button type="submit" class="btn btn-success">Crear Mascota</button>
+
+      </form>
+    </div>
+    <div class="col-sm-4">
+      <h3 class="text-center"> ID: <%=mascota.id%> -  <%=mascota.nombre%></h3>
+      <h4 class="text-center"> Dia: <%=mascota.fechaNacimiento.getDay()%> Mes: <%=mascota.fechaNacimiento.getMonth()%> Año: <%=mascota.fechaNacimiento.getFullYear()%></h4>
+      <p class="text-center">
+        <%= mascota.paisNacimiento %>
+      </p>
+    </div>
+  </div>
+
+
+</div>

@@ -1,0 +1,38 @@
+<div style='background-color:white;color:black;'>
+
+  <h1>Crea Mascotas</h1>
+  <p>¡Registra a tus mascotas!</p>
+
+  <form action="mascota/crearMascota" method="post">
+    <div class="form-group">
+      <label>Nombre</label>
+      <input required type="text" class="form-control" placeholder="Nombre" name="nombre">
+    </div>
+
+    <div class="form-group">
+      <label>Fecha Nacimiento</label>
+      <input type="date" class="form-control" placeholder="Fecha Nacimiento" name="fechaNacimiento">
+    </div>
+
+    <label for="">Raza</label>
+
+    <select class="form-control" name="idRaza">
+      <% for(var i=0; i<razas.length; i++){ %>
+        <option value='<%=razas[i].id%>'>
+          <%=razas[i].nombre%>
+        </option>
+        <%  } %>
+    </select>
+
+    <br>
+    <label for="">Pais Nacimiento</label>
+    <select class="form-control" name="paisNacimiento">
+      <option value='Ecuador'>Ecuador</option>
+      <option value='Peru'>Peru</option>
+      <option value='Colombia'>Colombia</option>
+    </select>
+    <br>
+    <button type="submit" class="btn btn-success">Crear Mascota</button>
+
+  </form>
+</div>
