@@ -40,9 +40,6 @@ module.exports = {
                         });
                     }
 
-
-
-
                     Usuario.find()
                         .exec(function (errorIndefinido, usuariosEncontrados) {
 
@@ -60,12 +57,6 @@ module.exports = {
                                 usuarios: usuariosEncontrados
                             });
                         })
-
-
-
-
-
-
 
                 })
 
