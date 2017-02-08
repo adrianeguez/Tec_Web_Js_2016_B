@@ -94,7 +94,7 @@ module.exports = {
 
         if (parametros.id) {
 
-            Usuario.remove({
+            Usuario.destroy({
                 id: parametros.id
             }).exec(function (errorInesperado, UsuarioRemovido) {
                 if (errorInesperado) {
