@@ -139,10 +139,8 @@ module.exports = {
 
         var parametros = req.allParams();
 
-        if (parametros.id && (parametros.nombres || parametros.apellidos || parametros.correo)) {
-
-
-
+        if (parametros.idUsuario && (parametros.nombres || parametros.apellidos || parametros.correo)) {
+            
             var usuarioAEditar = {
                 nombres: parametros.nombres,
                 apellidos: parametros.apellidos,
@@ -158,9 +156,11 @@ module.exports = {
             if (usuarioAEditar.correo == "") {
                 delete usuarioAEditar.correo
             }
+            
+            
 
             Usuario.update({
-                    id: parametros.id
+                    id: parametros.idUsuario
                 }, usuarioAEditar)
                 .exec(function (errorInesperado, UsuarioRemovido) {
                     if (errorInesperado) {
@@ -172,6 +172,7 @@ module.exports = {
                             }
                         });
                     }
+                
                     Usuario.find()
                         .exec(function (errorIndefinido, usuariosEncontrados) {
 
@@ -189,14 +190,20 @@ module.exports = {
                                 usuarios: usuariosEncontrados
                             });
                         })
+
                 })
+            
+            
+            
+            
+            
 
         } else {
             return res.view('vistas/Error', {
                 error: {
                     desripcion: "Necesitamos que envies el ID y el nombre, apellido o correo",
                     rawError: "No envia Parametros",
-                    url: "/EditarUsuario"
+                    url: "/ListarUsuarios"
                 }
             });
         }
