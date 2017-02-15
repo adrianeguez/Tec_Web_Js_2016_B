@@ -42,8 +42,6 @@ module.exports = {
                 });
             })
     },
-
-
     editarUsuario: function (req, res) {
 
         var parametros = req.allParams();
@@ -64,7 +62,8 @@ module.exports = {
                 }
                 if(UsuarioEncontrado){
                      return res.view("vistas/Usuario/editarUsuario",{
-                         usuarioAEditar:UsuarioEncontrado
+                         usuarioAEditar:UsuarioEncontrado,
+                         inicioSesion:true
                      });
                 }else{
                     return res.view('vistas/Error', {
@@ -89,7 +88,8 @@ module.exports = {
         }
     }
 
-
-
-
+    
+    
+    
+    
 };
