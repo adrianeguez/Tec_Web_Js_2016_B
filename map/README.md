@@ -1,6 +1,6 @@
 # Map
 
-```javascript   1.8
+```
 let elementos = ["a",2,3]
 
 //Map transforma el arreglo en un nuevo arreglo

@@ -1,5 +1,5 @@
 # Reduce
-```javascript 1.8
+```
 let elementos = [1,2,3,4]
 
 // Reduce suma, resta, anade, elimina, muta un elemento dependiendo de una condición

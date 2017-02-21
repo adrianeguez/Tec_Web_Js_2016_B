@@ -1,6 +1,6 @@
 # forEach
 
-```javascript   1.8
+```
 let elementos = ["a",2,3]
 
 //forEach es usado para ejecutar código 

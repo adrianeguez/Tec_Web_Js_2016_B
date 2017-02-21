@@ -1,6 +1,6 @@
 # Some
 
-```javascript   1.8
+```
 let elementos = ["a",1,2,true,null,[1,2,3]]
 
 //Some devuelve TRUE o FALSE si se cumple al menos

@@ -1,5 +1,5 @@
 # Template String
-```javascript 1.8
+```
 let edad = 18
 const universidad = "Escuela Politecnica Nacional"
 

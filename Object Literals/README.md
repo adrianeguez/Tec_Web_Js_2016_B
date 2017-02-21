@@ -1,6 +1,6 @@
 # Object Literals
 
-```javascript 1.8
+```
 
 function definirObjetoUsuario(nombre){
   return {

@@ -1,6 +1,6 @@
 # Fat Arrow Functions
 
-```javascript 1.8
+```
 function saludar(usuario){
   console.log(`Hola ${usuario}`);
 }
