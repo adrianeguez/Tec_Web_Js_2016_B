@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7aa1ff7-3fcb-4192-874e-57f6f6117728" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AplicacionPrueba/AplicacionPrueba/src/app/app.component.html" afterPath="$PROJECT_DIR$/AplicacionPrueba/AplicacionPrueba/src/app/app.component.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AplicacionPrueba/AplicacionPrueba/src/app/app.component.ts" afterPath="$PROJECT_DIR$/AplicacionPrueba/AplicacionPrueba/src/app/app.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AplicacionPrueba/AplicacionPrueba/src/app/app.module.ts" afterPath="$PROJECT_DIR$/AplicacionPrueba/AplicacionPrueba/src/app/app.module.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -78,11 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AplicacionPrueba/AplicacionPrueba/src/app/app.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+            <state relative-caret-position="345">
+              <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="50" selection-end-column="42" />
               <folding>
                 <element signature="n#!!block;n#constructor#0;n#AppComponent#0" expanded="false" />
                 <element signature="n#!!block;n#ngOnInit#0;n#AppComponent#0" expanded="false" />
@@ -92,16 +90,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.component.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AplicacionPrueba/AplicacionPrueba/src/app/app.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding>
-                <element signature="n#h1#0;n#!!top" expanded="false" />
-                <element signature="n#p#0;n#!!top" expanded="false" />
-                <element signature="n#h3#0;n#!!top" expanded="false" />
-              </folding>
+            <state relative-caret-position="57">
+              <caret line="2" column="47" lean-forward="false" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="47" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -128,8 +122,8 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/AplicacionPrueba/AplicacionPrueba/src/index.html" />
         <option value="$PROJECT_DIR$/AplicacionPrueba/AplicacionPrueba/src/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/AplicacionPrueba/AplicacionPrueba/src/app/app.component.ts" />
         <option value="$PROJECT_DIR$/AplicacionPrueba/AplicacionPrueba/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/AplicacionPrueba/AplicacionPrueba/src/app/app.component.ts" />
       </list>
     </option>
   </component>
@@ -350,12 +344,12 @@
       <workItem from="1487699306182" duration="699000" />
       <workItem from="1487879453884" duration="441000" />
       <workItem from="1487882852761" duration="35000" />
-      <workItem from="1487882908879" duration="7261000" />
+      <workItem from="1487882908879" duration="7985000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13037000" />
+    <option name="totallyTimeSpent" value="13761000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1932" height="1038" extended-state="0" />
@@ -499,26 +493,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/AplicacionPrueba/AplicacionPrueba/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="2" column="47" lean-forward="false" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/AplicacionPrueba/AplicacionPrueba/src/app/app.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+        <state relative-caret-position="345">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="50" selection-end-column="42" />
           <folding>
             <element signature="n#!!block;n#constructor#0;n#AppComponent#0" expanded="false" />
             <element signature="n#!!block;n#ngOnInit#0;n#AppComponent#0" expanded="false" />
             <element signature="n#!!block;n#nombreCompleto#0;n#AppComponent#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AplicacionPrueba/AplicacionPrueba/src/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="n#h1#0;n#!!top" expanded="false" />
-            <element signature="n#p#0;n#!!top" expanded="false" />
-            <element signature="n#h3#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>

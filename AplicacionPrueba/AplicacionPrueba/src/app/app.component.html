@@ -1,18 +1,16 @@
-<h1>
-  {{title}}
-</h1>
+<h1>{{title}}</h1>
+<div class="container">
+  <form (ngSubmit)="crearTienda(NuevaTiendaForm)" #NuevaTiendaForm="ngForm">
+    <div class="form-group">
+      <label>Tienda</label>
+      <input type="text"
+             class="form-control"
+             placeholder="Digite un nombre de tienda como: Adidas"
+             name="nombre"
+             [(ngModel)]="nuevaTienda.nombre">
+    </div>
+    <button type="submit" class="btn btn-block btn-success">Crear</button>
+  </form>
 
-<p>
-  {{nombre}} - {{apellido}}
-</p>
-
-<h3 [innerHTML]="nombreCompleto()"
-    (click)="hizoClick()"
-    (mouseenter)="hizoFocus()"
-    [style.fontSize]="tamanoH4"
-    [class]="classes">
-
-</h3>
-
-<input type="text" [placeholder]="nombreCompleto()" >
+</div>
 
