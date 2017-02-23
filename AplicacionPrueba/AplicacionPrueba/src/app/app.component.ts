@@ -1,4 +1,5 @@
 import {Component, OnInit} from "@angular/core";
+import {Response, Http} from "@angular/http";
 
 @Component({
   selector: 'app-root',
@@ -18,7 +19,7 @@ export class AppComponent implements OnInit {
 
 
 
-  constructor() {
+  constructor(private http: Http) {
     this.apellido = "Eguez";
     this.nombre = "Adrian";
     console.log("Inicio el construcor")
@@ -47,7 +48,13 @@ export class AppComponent implements OnInit {
   crearTienda(formulario){
     console.log(formulario);
     this.http
-      .post(this.masterURL + urlModelo, valores)
-      .map((res: Response) => res.json());
+      .post("http://localhost:1337/Tienda", formulario.valores)
+      .subscribe(
+        res=>console.log('Respuesta: ',res),
+        err=>console.log('Error: ',err),
+        ()=>{
+          console.log("Se completo la accion")
+        }
+      );
   }
 }
