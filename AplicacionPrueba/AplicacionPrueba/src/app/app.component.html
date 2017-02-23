@@ -1,3 +1,18 @@
 <h1>
   {{title}}
 </h1>
+
+<p>
+  {{nombre}} - {{apellido}}
+</p>
+
+<h3 [innerHTML]="nombreCompleto()"
+    (click)="hizoClick()"
+    (mouseenter)="hizoFocus()"
+    [style.fontSize]="tamanoH4"
+    [class]="classes">
+
+</h3>
+
+<input type="text" [placeholder]="nombreCompleto()" >
+
