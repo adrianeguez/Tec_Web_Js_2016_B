@@ -63,7 +63,6 @@ export class AppComponent implements OnInit {
     //   }
     // );
   }
-
   borrarTienda(id:number){
     this._http.delete(this._masterURL.url+"Tienda/"+id)
       .subscribe(
@@ -73,6 +72,20 @@ export class AppComponent implements OnInit {
         },
         (err)=>{
           console.log(err);
+        }
+      )
+  }
+  actualizarTienda(tienda:any){
+    let parametos = {
+      nombre:tienda.nombre
+    };
+    this._http.put(this._masterURL.url+"Tienda/"+tienda.id,parametos)
+      .subscribe(
+        (res:Response)=>{
+          console.log("Respuesta:",res.json());
+        },
+        (err)=>{
+          console.log("Error:",err);
         }
       )
   }
