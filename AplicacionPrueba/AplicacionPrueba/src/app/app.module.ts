@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import {MasterURlService} from "./services/master-url.service";
 
 // DECORATOR
 // @Decorator({asd:"asd"})
@@ -19,7 +20,9 @@ import { AppComponent } from './app.component';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [
+    MasterURlService
+  ],
   bootstrap: [AppComponent]
 })
 

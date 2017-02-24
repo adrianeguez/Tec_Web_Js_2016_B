@@ -1,5 +1,6 @@
 import {Component, OnInit} from "@angular/core";
 import {Response, Http} from "@angular/http";
+import {MasterURlService} from "./services/master-url.service";
 
 @Component({
   selector: 'app-root',
@@ -15,11 +16,11 @@ export class AppComponent implements OnInit {
   tamanoH4 = "52px";
   classes = "btn btn-block btn-success";
 
-  nuevaTienda:any={};
+  nuevaTienda: any = {};
 
 
-
-  constructor(private http: Http) {
+  constructor(private _http: Http,
+              private _masterURL: MasterURlService) {
     this.apellido = "Eguez";
     this.nombre = "Adrian";
     console.log("Inicio el construcor")
@@ -45,16 +46,21 @@ export class AppComponent implements OnInit {
   }
 
 
-  crearTienda(formulario){
+  crearTienda(formulario) {
     console.log(formulario);
-    this.http
-      .post("http://localhost:1337/Tienda", formulario.valores)
-      .subscribe(
-        res=>console.log('Respuesta: ',res),
-        err=>console.log('Error: ',err),
-        ()=>{
-          console.log("Se completo la accion")
-        }
-      );
+
+    this._http.post(this._masterURL.url, {})
+      .subscribe(respuesta=>console.log("respuesta",respuesta));
+
+
+    //
+    // .post("http://localhost:1337/Tienda", formulario.valores)
+    // .subscribe(
+    //   res=>console.log('Respuesta: ',res),
+    //   err=>console.log('Error: ',err),
+    //   ()=>{
+    //     console.log("Se completo la accion")
+    //   }
+    // );
   }
 }
