@@ -3,15 +3,18 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-12">
-      <pre>
+      <pre class="animated fadeInUp">
         {{nuevaTienda | json}}
       </pre>
     </div>
     <div class="col-sm-6">
-      <form (ngSubmit)="crearTienda(NuevaTiendaForm)" #NuevaTiendaForm="ngForm">
+      <form class="animated bounceIn" (ngSubmit)="crearTienda(NuevaTiendaForm)" #NuevaTiendaForm="ngForm">
         <div class="form-group">
           <label>Tienda</label>
-          <span class=" bg-primary" *ngIf="nombre.errors && (nombre.dirty || nombre.touched)" >Ingrese un nombre minimo con 4 caracteres </span>
+          <div class="animated slideInUp" [hidden]="!nombre.errors">
+            <span style="font-size:40px" class="bg-primary" *ngIf="nombre.errors && (nombre.dirty || nombre.touched)" >Ingrese un nombre minimo con 4 caracteres </span>
+          </div>
+
           <input required
                  minlength="4"
                  type="text"
@@ -27,6 +30,27 @@
     </div>
     <div class="col-sm-6">
       <h1>{{nuevaTienda.nombre}}</h1>
+    </div>
+    <!--<div class="col-sm-12">-->
+      <!--<pre>-->
+        <!--{{tiendas | json}}-->
+      <!--</pre>-->
+    <!--</div>-->
+
+
+
+
+
+
+
+
+
+
+  </div>
+  <div class="row">
+    <div class="col-sm-3" *ngFor="let tienda of tiendas">
+      <h3>{{tienda.nombre}}</h3>
+      <p>ID: {{tienda.id}}</p>
     </div>
   </div>
 

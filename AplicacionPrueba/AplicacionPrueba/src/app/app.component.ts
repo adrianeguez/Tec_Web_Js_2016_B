@@ -10,50 +10,26 @@ import {Form, NgForm} from "@angular/forms";
 })
 // CTRL A +  -  CTRL + ALT + L
 export class AppComponent implements OnInit {
-  title: string = "Hola Amigos";
-  nombre: string = "";
-  apellido: string = "";
-  colorH4 = "red";
-  tamanoH4 = "52px";
-  classes = "btn btn-block btn-success";
-
-  error:string = "No hay errores";
-
+  title: string = "Bienvenido a Ingresar Tiendas";
   nuevaTienda= {};
-
+  tiendas = [];
   disabledButtons = {
     NuevaTiendaFormSubmitButton:false
-  }
-
-
-
+  };
   constructor(private _http: Http,
               private _masterURL: MasterURlService) {
-    this.apellido = "Eguez";
-    this.nombre = "Adrian";
-    console.log("Inicio el construcor")
   }
-
   ngOnInit() {
-    this.apellido = "Sarzosa";
-    this.nombre = "Vicente";
-    console.log("On Init")
+    this._http.get(this._masterURL.url+"Tienda")
+      .subscribe(
+        (res:Response)=>{
+          this.tiendas = res.json();
+        },
+        (err)=>{
+          console.log(err);
+        }
+      )
   }
-
-  nombreCompleto(): string {
-    return `${this.nombre} ${this.apellido}`
-  }
-
-  hizoClick() {
-    console.log("Hizo Click");
-    console.log()
-  }
-
-  hizoFocus() {
-    console.log("Hizo focus");
-  }
-
-
   crearTienda(formulario:NgForm) {
     console.log(formulario);
     this.disabledButtons.NuevaTiendaFormSubmitButton = true;
