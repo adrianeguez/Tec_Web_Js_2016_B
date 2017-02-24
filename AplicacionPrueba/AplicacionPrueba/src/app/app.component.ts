@@ -1,6 +1,7 @@
 import {Component, OnInit} from "@angular/core";
 import {Response, Http} from "@angular/http";
 import {MasterURlService} from "./services/master-url.service";
+import {Form, NgForm} from "@angular/forms";
 
 @Component({
   selector: 'app-root',
@@ -18,7 +19,12 @@ export class AppComponent implements OnInit {
 
   error:string = "No hay errores";
 
-  nuevaTienda: any = {};
+  nuevaTienda= {};
+
+  disabledButtons = {
+    NuevaTiendaFormSubmitButton:false
+  }
+
 
 
   constructor(private _http: Http,
@@ -48,18 +54,21 @@ export class AppComponent implements OnInit {
   }
 
 
-  crearTienda(formulario) {
-
+  crearTienda(formulario:NgForm) {
+    console.log(formulario);
+    this.disabledButtons.NuevaTiendaFormSubmitButton = true;
     this._http.post(this._masterURL.url+"Tienda", {
       nombre:formulario.value.nombre
     }).subscribe(
       (res)=>{
         console.log("No hubo Errores");
         console.log(res);
-        this.nuevaTienda = {}
+        this.nuevaTienda = {};
+        this.disabledButtons.NuevaTiendaFormSubmitButton = false;
       },
       (err)=>{
-        console.log("Ocurrio un error",err);
+        this.disabledButtons.NuevaTiendaFormSubmitButton = false;
+        console.log("Ocurrio un err or",err);
       },
       ()=>{
         console.log("Termino la función vamos a las casas")

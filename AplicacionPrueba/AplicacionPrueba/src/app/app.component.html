@@ -11,15 +11,18 @@
       <form (ngSubmit)="crearTienda(NuevaTiendaForm)" #NuevaTiendaForm="ngForm">
         <div class="form-group">
           <label>Tienda</label>
+          <span class=" bg-primary" *ngIf="nombre.errors && (nombre.dirty || nombre.touched)" >Ingrese un nombre minimo con 4 caracteres </span>
           <input required
                  minlength="4"
                  type="text"
                  class="form-control"
                  placeholder="Digite un nombre de tienda como: Adidas"
                  name="nombre"
-                 [(ngModel)]="nuevaTienda.nombre">
+                 [(ngModel)]="nuevaTienda.nombre"
+                 #nombre="ngModel"
+                 #nombreElm>
         </div>
-        <button [disabled]="!NuevaTiendaForm.valid" type="submit" class="btn btn-block btn-success">Crear</button>
+        <button [disabled]="disabledButtons.NuevaTiendaFormSubmitButton||!NuevaTiendaForm.valid" type="submit" class="btn btn-block btn-success">Crear</button>
       </form>
     </div>
     <div class="col-sm-6">
