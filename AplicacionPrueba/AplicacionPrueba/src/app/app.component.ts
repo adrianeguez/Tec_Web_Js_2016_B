@@ -16,6 +16,8 @@ export class AppComponent implements OnInit {
   tamanoH4 = "52px";
   classes = "btn btn-block btn-success";
 
+  error:string = "No hay errores";
+
   nuevaTienda: any = {};
 
 
@@ -47,7 +49,6 @@ export class AppComponent implements OnInit {
 
 
   crearTienda(formulario) {
-    console.log(formulario);
 
     this._http.post(this._masterURL.url+"Tienda", {
       nombre:formulario.value.nombre

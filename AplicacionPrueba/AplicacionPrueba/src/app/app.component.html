@@ -1,4 +1,5 @@
 <h1>{{title}}</h1>
+<h2>{{error}}</h2>
 <div class="container">
   <div class="row">
     <div class="col-sm-12">
@@ -10,13 +11,15 @@
       <form (ngSubmit)="crearTienda(NuevaTiendaForm)" #NuevaTiendaForm="ngForm">
         <div class="form-group">
           <label>Tienda</label>
-          <input type="text"
+          <input required
+                 minlength="4"
+                 type="text"
                  class="form-control"
                  placeholder="Digite un nombre de tienda como: Adidas"
                  name="nombre"
                  [(ngModel)]="nuevaTienda.nombre">
         </div>
-        <button type="submit" class="btn btn-block btn-success">Crear</button>
+        <button [disabled]="!NuevaTiendaForm.valid" type="submit" class="btn btn-block btn-success">Crear</button>
       </form>
     </div>
     <div class="col-sm-6">
