@@ -1,0 +1,96 @@
+<h1>{{title}}</h1>
+<h2>{{error}}</h2>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <pre class="animated fadeInUp">
+        {{nuevaTienda | json}}
+      </pre>
+    </div>
+    <div class="col-sm-6">
+      <form class="animated bounceIn" (ngSubmit)="crearTienda(NuevaTiendaForm)" #NuevaTiendaForm="ngForm">
+        <div class="form-group">
+          <label>Tienda</label>
+          <!--<div class="animated slideInUp" [hidden]="!nombre.errors">-->
+          <!--<span style="font-size:40px" class="bg-primary" *ngIf="nombre.errors && (nombre.dirty || nombre.touched)" >Ingrese un nombre minimo con 4 caracteres </span>-->
+          <!--</div>-->
+
+          <input required
+                 minlength="4"
+                 type="text"
+                 class="form-control"
+                 placeholder="Digite un nombre de tienda como: Adidas"
+                 name="nombre"
+                 [(ngModel)]="nuevaTienda.nombre"
+                 #nombre="ngModel"
+                 #nombreElm>
+        </div>
+        <button [disabled]="disabledButtons.NuevaTiendaFormSubmitButton||!NuevaTiendaForm.valid" type="submit"
+                class="btn btn-block btn-success">Crear
+        </button>
+      </form>
+    </div>
+    <div class="col-sm-6">
+      <h1>{{nuevaTienda.nombre}}</h1>
+    </div>
+    <!--<div class="col-sm-12">-->
+    <!--<pre>-->
+    <!--{{tiendas | json}}-->
+    <!--</pre>-->
+    <!--</div>-->
+
+
+  </div>
+  <div class="row">
+    <div class="col-sm-12 animated flipInX" *ngFor="let tienda of tiendas">
+      <div class="text-center">
+        <h3>{{tienda.nombre}}</h3>
+        <p>ID: {{tienda.id}}</p>
+      </div>
+      <div class="row animated flipInY" [hidden]="!tienda.formularioCerrado">
+        <div class="col-sm-5">
+          <button class="btn btn-block btn-info"
+                  (click)="tienda.formularioCerrado = !tienda.formularioCerrado"
+          >Actualizar</button>
+        </div>
+        <div class="col-sm-2"></div>
+        <div class="col-sm-5">
+          <button class="btn btn-block btn-danger" (click)="borrarTienda(tienda.id)">Borrar</button>
+        </div>
+      </div>
+      <div class="div" [hidden]="tienda.formularioCerrado">
+        <form action="">
+          <form class="animated bounceIn" (ngSubmit)="actualizarTienda(tienda)" #NuevaTiendaForm="ngForm">
+            <div class="form-group">
+              <label>Tienda</label>
+              <input required
+                     minlength="4"
+                     type="text"
+                     class="form-control"
+                     placeholder="Digite un nombre de tienda como: Adidas"
+                     name="nombre"
+                     [(ngModel)]="tienda.nombre"
+                     #nombre="ngModel"
+                     #nombreElm>
+            </div>
+            <button [disabled]="disabledButtons.NuevaTiendaFormSubmitButton||!NuevaTiendaForm.valid" type="submit"
+                    class="btn btn-block btn-success">Update
+            </button>
+            <button type="button"
+                    class="btn btn-block btn-warning"
+                    (click)="tienda.formularioCerrado = !tienda.formularioCerrado"
+            >
+              Cancelar
+            </button>
+          </form>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+
+</div>
+
+<!--<router-outlet></router-outlet>-->
+

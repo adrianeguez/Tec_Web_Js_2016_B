@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import {MasterURlService} from "./services/master-url.service";
 import { HomeComponent } from './home/home.component';
 import {routing} from "./app.routes";
+import { TiendaComponent } from './tienda/tienda.component';
+import { ProductoComponent } from './producto/producto.component';
 
 // DECORATOR
 // @Decorator({asd:"asd"})
@@ -16,7 +18,9 @@ import {routing} from "./app.routes";
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    TiendaComponent,
+    ProductoComponent
   ],
   imports: [
     BrowserModule,
