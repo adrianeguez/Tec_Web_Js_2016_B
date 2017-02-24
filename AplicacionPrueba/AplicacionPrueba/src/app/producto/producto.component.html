@@ -7,9 +7,15 @@
            class="form-control"
            name="nombre"
            [(ngModel)]="nuevoProducto.nombre"
-           #nombre="ngModel"
-           #nombreElm>
+           >
   </div>
-  <button class="btn btn-block btn-success" (click)="crearProducto(nombre)">Crear Producto</button>
+  <button class="btn btn-block btn-success" (click)="crearProducto(nuevoProducto.nombre)">Crear Producto</button>
+
+  <div class="row">
+    <div class="col-sm-12" *ngFor="let producto of productos">
+      <h1>{{producto.nombre}}</h1>
+      <p>ID:{{producto.id}}</p>
+    </div>
+  </div>
 </div>
 

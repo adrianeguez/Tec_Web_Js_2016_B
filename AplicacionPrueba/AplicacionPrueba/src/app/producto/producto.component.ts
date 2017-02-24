@@ -45,6 +45,7 @@ export class ProductoComponent implements OnInit {
       .subscribe(
         (res:Response)=>{
           this.productos.push(res.json());
+          this.nuevoProducto = {};
         },
         (err)=>{
           console.log(err)
