@@ -49,8 +49,21 @@ export class AppComponent implements OnInit {
   crearTienda(formulario) {
     console.log(formulario);
 
-    this._http.post(this._masterURL.url, {})
-      .subscribe(respuesta=>console.log("respuesta",respuesta));
+    this._http.post(this._masterURL.url+"Tienda", {
+      nombre:formulario.value.nombre
+    }).subscribe(
+      (res)=>{
+        console.log("No hubo Errores");
+        console.log(res);
+        this.nuevaTienda = {}
+      },
+      (err)=>{
+        console.log("Ocurrio un error",err);
+      },
+      ()=>{
+        console.log("Termino la función vamos a las casas")
+      }
+    );
 
 
     //
