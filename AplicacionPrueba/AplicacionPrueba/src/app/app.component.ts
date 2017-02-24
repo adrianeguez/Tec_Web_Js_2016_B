@@ -39,6 +39,7 @@ export class AppComponent implements OnInit {
       (res)=>{
         console.log("No hubo Errores");
         console.log(res);
+        this.tiendas.push(res.json());
         this.nuevaTienda = {};
         this.disabledButtons.NuevaTiendaFormSubmitButton = false;
       },
@@ -62,4 +63,21 @@ export class AppComponent implements OnInit {
     //   }
     // );
   }
+
+  borrarTienda(id:number){
+    this._http.delete(this._masterURL.url+"Tienda/"+id)
+      .subscribe(
+        (res)=>{
+          let tiendaBorrada = res.json();
+          this.tiendas = this.tiendas.filter(value=>tiendaBorrada.id!=value.id);
+        },
+        (err)=>{
+          console.log(err);
+        }
+      )
+  }
+
+
+
+
 }
