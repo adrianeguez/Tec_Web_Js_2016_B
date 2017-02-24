@@ -1,3 +1,15 @@
-<p>
-  producto works!
-</p>
+<h1>Productos</h1>
+
+<div class="container">
+  <div class="form-group">
+    <label>Nombre de Producto</label>
+    <input type="text"
+           class="form-control"
+           name="nombre"
+           [(ngModel)]="nuevoProducto.nombre"
+           #nombre="ngModel"
+           #nombreElm>
+  </div>
+  <button class="btn btn-block btn-success" (click)="crearProducto(nombre)">Crear Producto</button>
+</div>
+
