@@ -1,0 +1,117 @@
+{
+  "data": {
+    "producto": [
+      {
+        "nombre": "Relog",
+        "idTienda": 25,
+        "createdAt": "2017-02-24T22:04:00.927Z",
+        "updatedAt": "2017-02-24T22:04:00.927Z",
+        "id": 1
+      },
+      {
+        "nombre": "MESA",
+        "idTienda": 26,
+        "createdAt": "2017-02-24T22:06:09.142Z",
+        "updatedAt": "2017-02-24T22:06:09.142Z",
+        "id": 2
+      },
+      {
+        "nombre": "SILLA",
+        "idTienda": 26,
+        "createdAt": "2017-02-24T22:06:12.249Z",
+        "updatedAt": "2017-02-24T22:06:12.249Z",
+        "id": 3
+      },
+      {
+        "nombre": "CARTERA",
+        "idTienda": 27,
+        "createdAt": "2017-02-24T22:06:18.950Z",
+        "updatedAt": "2017-02-24T22:06:18.950Z",
+        "id": 4
+      },
+      {
+        "nombre": "PERFUME",
+        "idTienda": 27,
+        "createdAt": "2017-02-24T22:06:23.046Z",
+        "updatedAt": "2017-02-24T22:06:23.046Z",
+        "id": 5
+      }
+    ],
+    "tienda": [
+      {
+        "nombre": "Nuevazo",
+        "createdAt": "2017-02-24T19:25:15.055Z",
+        "updatedAt": "2017-02-24T19:49:52.757Z",
+        "id": 25
+      },
+      {
+        "nombre": "Puma apoadsdasdasdasdasd asd asd asd as d asd asd asd asd as dasd",
+        "createdAt": "2017-02-24T19:30:47.784Z",
+        "updatedAt": "2017-02-24T20:28:07.418Z",
+        "id": 26
+      },
+      {
+        "nombre": "Michael Cors",
+        "createdAt": "2017-02-24T19:30:58.879Z",
+        "updatedAt": "2017-02-24T19:30:58.879Z",
+        "id": 27
+      },
+      {
+        "nombre": "Nuevazo",
+        "createdAt": "2017-02-24T19:48:25.216Z",
+        "updatedAt": "2017-02-24T19:48:25.216Z",
+        "id": 28
+      },
+      {
+        "nombre": "Popaosdpoasdpoaspdoasd",
+        "createdAt": "2017-02-24T21:00:55.492Z",
+        "updatedAt": "2017-02-24T21:00:55.492Z",
+        "id": 29
+      }
+    ]
+  },
+  "schema": {
+    "producto": {
+      "idTienda": {
+        "type": "integer",
+        "model": "tienda",
+        "foreignKey": true,
+        "alias": "idTienda"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "tienda": {
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    }
+  },
+  "counters": {
+    "tienda": {
+      "id": 29
+    },
+    "producto": {
+      "id": 5
+    }
+  }
+}
